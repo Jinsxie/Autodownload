@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="zh-CN">
+<html lang="EN">
 
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,7 @@
       platform : function(){
                 
          var u = navigator.userAgent, app = navigator.appVersion;
-                         return {
+               return {
             
                // android终端或者uc浏览器
             
@@ -44,12 +44,12 @@
 
        // 根据不同的终端，跳转到不同的地址
  
-       var theUrl = 'Apple store:https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
+       var theUrl = 'https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
 
        if(Terminal.platform.android){//安卓端
 
            document.write('UPTEC View');
-          // window.location.href='google play:https://play.google.com/store/apps/details?id=com.mobile.myeye.uptec&raii=com.mobile.myeye.uptec';
+          // theUrl = 'https://play.google.com/store/apps/details?id=com.mobile.myeye.uptec&raii=com.mobile.myeye.uptec';
           
            //location.href = theUrl;
 
@@ -57,7 +57,7 @@
   
           if(Terminal.platform.iPhone){//iPhone端
  
-               theUrl = 'Apple store:https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
+               theUrl = 'https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
  
            }else if(Terminal.platform.iPad){//iPad端
 
@@ -67,25 +67,25 @@
   
                   case 'en-us'://iPad英文版APP Store地址
   
-                      theUrl = 'Apple store:https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
+                      theUrl = 'https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
  
                        break;
  
                   case 'ko-kr'://iPad韩语版APP Store地址
   
-                      theUrl = 'Apple store:https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
+                      theUrl = 'https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
  
                       break;
  
                   case 'ja-jp'://iPad日文版APP Store地址
    
-                      theUrl = 'Apple store:https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
+                      theUrl = 'https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
 
                       break;
    
                  default://iPad默认APP Store地址
    
-                     theUrl = 'Apple store:https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
+                     theUrl = 'https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
   
               }
   
@@ -101,7 +101,7 @@
    </script>
 
 <body>
-    
+ <a href="//www.taobao.com/">淘宝网</a>   
 <!--
 
 -->  
