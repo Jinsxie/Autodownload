@@ -10,8 +10,8 @@
     <!--
  
     -->
-  //  <script src="https://s23.cnzz.com/z_stat.php?id=1275487845&web_id=1275487845" language="JavaScript"></script>
-  //  <script type="text/javascript">
+  /*  <script src="https://s23.cnzz.com/z_stat.php?id=1275487845&web_id=1275487845" language="JavaScript"></script>  */
+    <script type="text/javascript"> 
         //声明_czc对象:
   //      var _czc = _czc || [];
         //绑定siteid，请用您的siteid替换下方"XXXXXXXX"部分
@@ -38,18 +38,18 @@
         var theUrl = 'https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
         if (Terminal.platform.android) {//安卓端
           <div class="text" style=" text-align:center;">
-            _czc.push(['_trackEvent', '简听', '下载', 'Android']);
+            //_czc.push(['_trackEvent', '简听', '下载', 'Android']);
             document.write('“UPTEC View for android');
             <frame name="Google Play" src="https://play.google.com/store/apps/details?id=com.mobile.myeye.uptec&raii=com.mobile.myeye.uptec'">
             //theUrl = 'https://play.google.com/store/apps/details?id=com.mobile.myeye.uptec&raii=com.mobile.myeye.uptec';
             //location.href = theUrl;
-           </di>
+           </div>
         } else {
             if (Terminal.platform.iPhone) {//iPhone端
-                _czc.push(['_trackEvent', '简听', '下载', 'iPhone']);
+                //_czc.push(['_trackEvent', '简听', '下载', 'iPhone']);
                 theUrl = 'https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
             } else if (Terminal.platform.iPad) {//iPad端
-                _czc.push(['_trackEvent', '简听', '下载', 'iPad']);
+                //_czc.push(['_trackEvent', '简听', '下载', 'iPad']);
                 // 还可以通过language，区分开多国语言版
                 switch (Terminal.language) {
                     case 'en-us'://iPad英文版APP Store地址
