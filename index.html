@@ -7,15 +7,15 @@
 </head>
 
 <body>
-    <!--
+  //  <!--
  
-    -->
+   // -->
   
-   // <script type="text/javascript"> 
+    <script type="text/javascript">
         //声明_czc对象:
-  //      var _czc = _czc || [];
+  /*      var _czc = _czc || []; */
         //绑定siteid，请用您的siteid替换下方"XXXXXXXX"部分
-  //      _czc.push(["_setAccount", "1275487845"]);
+  
         // 获取终端的相关信息
         var Terminal = {
             // 辨别移动终端类型
@@ -36,7 +36,8 @@
 
         // 根据不同的终端，跳转到不同的地址
         var theUrl = 'https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
-        if (Terminal.platform.android) {//安卓端
+        if (Terminal.platform.android)
+        {//安卓端
           
             //_czc.push(['_trackEvent', '简听', '下载', 'Android']);
             document.write('“UPTEC View for android');
