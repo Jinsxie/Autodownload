@@ -37,13 +37,15 @@
         // 根据不同的终端，跳转到不同的地址
         var theUrl = 'https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
         if (Terminal.platform.android) {//安卓端
-          <div class="text" style=" text-align:center;">
+          
             //_czc.push(['_trackEvent', '简听', '下载', 'Android']);
             document.write('“UPTEC View for android');
-            <frame name="Google Play" src="https://play.google.com/store/apps/details?id=com.mobile.myeye.uptec&raii=com.mobile.myeye.uptec'">
+            //<div class="text" style=" text-align:center;">
+             <frame name="Google Play" src="https://play.google.com/store/apps/details?id=com.mobile.myeye.uptec&raii=com.mobile.myeye.uptec">
+            //</div>
             //theUrl = 'https://play.google.com/store/apps/details?id=com.mobile.myeye.uptec&raii=com.mobile.myeye.uptec';
             //location.href = theUrl;
-          / </div>
+           
         } else {
             if (Terminal.platform.iPhone) {//iPhone端
                 //_czc.push(['_trackEvent', '简听', '下载', 'iPhone']);
