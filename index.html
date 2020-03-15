@@ -12,37 +12,37 @@
         
   var Terminal = {
     
-        // 辨别移动终端类型
+                    // 辨别移动终端类型
             
-      platform : function(){
+                   platform : function(){
                 
-         var u = navigator.userAgent, app = navigator.appVersion;
-               return {
+                    var u = navigator.userAgent, app = navigator.appVersion;
+                    return {
             
-               // android终端或者uc浏览器
+                           // android终端或者uc浏览器
             
-                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
-                     // 是否为iPhone或者QQHD浏览器
+                          android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+                           // 是否为iPhone或者QQHD浏览器
          
-                iPhone: u.indexOf('iPhone') > -1 ,
+                          iPhone: u.indexOf('iPhone') > -1 ,
           
-                // 是否iPad
+                           // 是否iPad
          
-                iPad: u.indexOf('iPad') > -1
+                          iPad: u.indexOf('iPad') > -1
           
-              };
+                           };
 
-            }(),
+                                         }(),
    
-          // 辨别移动终端的语言：zh-cn、en-us、ko-kr、ja-jp...
+                    // 辨别移动终端的语言：zh-cn、en-us、ko-kr、ja-jp...
    
-          language : (navigator.browserLanguage || navigator.language).toLowerCase()
+                   language : (navigator.browserLanguage || navigator.language).toLowerCase()
  
-        }
+                  }
 
  
 
-       // 根据不同的终端，跳转到不同的地址
+                     // 根据不同的终端，跳转到不同的地址
  
        var theUrl = 'https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
 
@@ -51,15 +51,17 @@
           // document.write('UPTEC View');
           // theUrl = 'https://play.google.com/store/apps/details?id=com.mobile.myeye.uptec&raii=com.mobile.myeye.uptec';
           
-           //location.href = theUrl;
+          //location.href = theUrl;
 
-      } else {
+                                    } 
+          else {
   
-          if(Terminal.platform.iPhone){//iPhone端
+               if(Terminal.platform.iPhone){//iPhone端
  
                theUrl = 'https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
  
-           }else if(Terminal.platform.iPad){//iPad端
+                                            }
+               else if(Terminal.platform.iPad){//iPad端
 
                 // 还可以通过language，区分开多国语言版
   
@@ -87,15 +89,15 @@
    
                      theUrl = 'https://apps.apple.com/us/app/uptec-view/id1492037634?l=zh&ls=1';
   
-              }
+                                      }
   
-          }
+                                          }
 
  
 
           location.href = theUrl;
  
-       }
+             }
 
  
    </script>
@@ -106,7 +108,7 @@
     <br>
     <br>
     <div align="center">
-     <img src="logo.png" id="img3" />
+     <img src="logo.png" alt="logo" />
     </div>
     
     <div align="center">   
